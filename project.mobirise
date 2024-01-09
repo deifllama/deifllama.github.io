@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-09 11:45",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://deifllama.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://deifllama.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "ukyhgty8d3",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "DefiLlama™ | Home Official Site",
+        "meta_descr": "WebDefiLlama is a website that tracks the total value locked, TVL, stablecoins, fees, revenue, volume, and rankings of various DeFi protocols and tokens across different blockchains. You can see the latest data, trends, and insights of the DeFi ecosystem on DefiLlama.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://defillama.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/defillama.png\" alt=\"Defillama\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u0QwOCNV2b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://deifllama.github.io/\" class=\"text-primary\">DefiLlama</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Unlocking the DeFi Landscape: A Closer Look at <a href=\"https://defillama.com/\" class=\"text-primary\">DeFiLlama</a></b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The decentralized finance (DeFi) space has been a hotbed of innovation, bringing about a paradigm shift in traditional financial systems. Among the many tools and platforms emerging in this ecosystem, DeFi Llama has taken center stage as a comprehensive tracker of key metrics, providing users with valuable insights into the decentralized finance landscape.\n<br>\n<br>Decoding <a href=\"https://deifllama.github.io/\" class=\"text-primary\">DeFiLlama</a>\n<br>What is DeFi Llama?\n<br>DeFi Llama is a platform designed to monitor and display essential metrics from various decentralized finance projects. It acts as a one-stop-shop for users seeking information on the total value locked (TVL), daily volume, and other relevant data across a range of DeFi protocols.\n<br>\n<br>Tracking Total Value Locked (TVL)\n<br>One of the key features of <a href=\"https://deifllama.github.io/\" class=\"text-primary\">DeFi Llama</a> is its real-time tracking of Total Value Locked (TVL) across multiple DeFi platforms. TVL is a metric used to measure the total amount of assets locked within a protocol. DeFi Llama provides a user-friendly interface that allows enthusiasts, investors, and developers to monitor changes in TVL over time.\n<br>\n<br>Daily Volume and Other Metrics\n<br>In addition to TVL, DeFi Llama provides data on daily trading volumes, token prices, and other critical metrics. This information helps users gauge the liquidity and trading activity within various DeFi projects, offering a more comprehensive view of the market dynamics.\n<br>\n<br>The Importance of DeFi Metrics\n<br>Informed Decision-Making\n<br>For DeFi participants, having access to accurate and up-to-date metrics is crucial for making informed decisions. Whether it's choosing a platform for investment or assessing the health of a particular protocol, DeFi Llama plays a vital role in empowering users with the data needed to navigate the complex world of decentralized finance.\n<br>\n<br>Market Transparency and Trust\n<br>The transparency provided by DeFi Llama contributes to building trust within the DeFi community. As decentralized finance continues to gain mainstream attention, having reliable metrics becomes paramount for users and investors who want to ensure the legitimacy and reliability of the projects they engage with.\n<br>\n<br>Navigating the DeFi Ecosystem with DeFi Llama\n<br>Diverse DeFi Protocols\n<br>DeFi Llama covers a wide range of decentralized finance protocols, including decentralized exchanges (DEXs), lending platforms, yield farming projects, and more. This diversity allows users to explore the entire spectrum of DeFi offerings and understand the unique characteristics of each protocol.\n<br>\n<br>User-Friendly Interface\n<br>The user interface of DeFi Llama is designed with accessibility in mind. Users, whether newcomers or seasoned DeFi participants, can easily navigate the platform to access the information they need. Intuitive charts and graphs provide a visual representation of the data, enhancing the overall user experience.\n<br>\n<br>Community Engagement\n<br>DeFi Llama often engages with the DeFi community through social media channels, providing updates, insights, and responding to user queries. This active engagement fosters a sense of community and collaboration within the decentralized finance space.\n<br>\n<br>Challenges and Considerations\n<br>Market Volatility\n<br>While DeFi Llama offers valuable insights, it's essential to acknowledge the inherent volatility within the DeFi space. Prices, volumes, and TVL can experience rapid fluctuations, and users should exercise caution and conduct thorough research before making any financial decisions based on the information provided by the platform.\n<br>\n<br>Regulatory Landscape\n<br>As decentralized finance attracts increasing regulatory attention, platforms like DeFi Llama may need to adapt to changing compliance requirements. Keeping an eye on regulatory developments is crucial for both the platform and its users.\n<br>\n<br>Future Prospects\n<br>Evolving Features\n<br>As the DeFi space continues to evolve, it's likely that DeFi Llama will introduce new features and metrics to stay ahead of the curve. Innovations such as integration with emerging blockchain networks, additional analytics tools, or partnerships with other DeFi projects could be on the horizon.\n<br>\n<br>DeFi Llama and the DeFi Ecosystem\n<br>The success and growth of DeFi Llama are intertwined with the broader development of the decentralized finance ecosystem. As more projects emerge, and the industry matures, DeFi Llama will play a pivotal role in providing users with the information they need to navigate this dynamic landscape.\n<br>\n<br>Conclusion\n<br>In the world of decentralized finance, information is power. DeFi Llama emerges as a beacon, illuminating the intricate metrics that define the DeFi landscape. As the decentralized finance space continues to captivate the financial world, platforms like DeFi Llama will likely remain instrumental in fostering transparency, community engagement, and informed decision-making. Whether you're a DeFi enthusiast, investor, or developer, DeFi Llama stands ready to guide you through the evolving skies of decentralized finance.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u0QwPpLZ92",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
